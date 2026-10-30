@@ -1,0 +1,6 @@
+[
+  { "name": "Site institucional", "kind": "http", "address": "https://example.com", "intervalS": 60 },
+  { "name": "Firewall - HTTPS de gerência", "kind": "tcp", "address": "192.168.1.1:443", "intervalS": 30, "failThreshold": 3 },
+  { "name": "Servidor de arquivos - SMB", "kind": "tcp", "address": "192.168.1.10:445", "intervalS": 60 },
+  { "name": "PABX - SIP", "kind": "tcp", "address": "192.168.1.20:5060", "intervalS": 30, "failThreshold": 2 }
+]

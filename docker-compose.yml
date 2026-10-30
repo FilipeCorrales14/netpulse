@@ -1,0 +1,15 @@
+services:
+  netpulse:
+    build: .
+    ports:
+      - "3000:3000"
+    environment:
+      TARGETS_FILE: /app/targets.json
+      # WEBHOOK_URL: https://hooks.slack.com/services/...
+    volumes:
+      - netpulse-data:/data
+      - ./targets.example.json:/app/targets.json:ro
+    restart: unless-stopped
+
+volumes:
+  netpulse-data:
