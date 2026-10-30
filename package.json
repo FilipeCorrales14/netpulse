@@ -1,0 +1,16 @@
+{
+  "name": "netpulse",
+  "version": "0.1.0",
+  "description": "Monitor de disponibilidade de serviços HTTP e TCP com histórico em SQLite e alertas por webhook.",
+  "type": "module",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node --disable-warning=ExperimentalWarning src/index.js",
+    "test": "node --disable-warning=ExperimentalWarning --test \"test/**/*.test.js\""
+  },
+  "engines": {
+    "node": ">=22.13"
+  },
+  "author": "Filipe Corrales Cardoso",
+  "license": "MIT"
+}
